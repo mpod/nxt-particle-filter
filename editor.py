@@ -50,6 +50,17 @@ def main():
     dx = SCREENRECT.width * 1.0 / n
     dy = SCREENRECT.height * 1.0 / m
 
+    print("""
+    Controls:
+    left mouse button - fill cell
+    right mouse button - release cell
+
+    ctrl+s - save model
+    ctrl+r - reset model
+
+    esc - quit
+    """)
+
     while True:
         screen.fill(white_color);
         for i in range(n):
